@@ -1,0 +1,5 @@
+Couleur Fare : rgba(255, 220, 219, 1) / #ffdcdb
+Couleur second: rgba(245, 245, 245,1) / #f5f5f5
+Body: rgba(255, 255, 255, 1)
+Navbar : rgba(255, 210, 210, 1) / #ffd2d2
+text_nav, soulignent, etc .. : rgba(254, 102, 102, 1) / #fe6666 / #ff5857
