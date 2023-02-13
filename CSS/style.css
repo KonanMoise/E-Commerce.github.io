@@ -95,6 +95,7 @@ body,html {
 
 /* END CATEGORIES */
 
+/* START ARRIVAGES */
 
 .cat .entete .but_blanc{
     color: #000;
@@ -104,4 +105,89 @@ body,html {
     border: 1px solid;
     border-radius: 5px;
     background: #fff;
+}
+.card_imgArr{
+    width: 100%;
+    padding: 0;
+    margin-bottom: 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.cat .card_imgArr .card1{
+    height: 600px;
+    width: 25%;
+    background: url('../IMG/woman1.jpeg');
+    background-position: center center;
+    background-size: cover;
+    margin-top: 90px;
+}
+
+.cat .card_imgArr .card2{
+    height: 600px;
+    width: 25%;
+    background: url('../IMG/woman1.jpeg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.cat .card_imgArr .card3{
+    height: 600px;
+    width: 25%;
+    background: url('../IMG/woman2.jpeg');
+    background-position: center center;
+    background-size: cover;
+    margin-top: 90px;
+
+}
+
+
+/* END ARRIVAGES */
+
+
+/* START PRODUIT */
+.card_imgPr{
+    /* background: #000; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.card_imgPr .c{
+    width: 25%;
+    height: 370px;
+}
+
+.card_imgPr .c > .mo{
+    width:100%; 
+    height:350px;
+    margin-bottom: 15px;
+}
+
+.mo1{
+    background: url('../IMG/shortHOP.jpeg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.mo2{
+    background: url('../IMG/trico.webp');
+    background-position: center center;
+    background-size: cover;
+}
+
+.mo3{
+    background: url('../IMG/t-shirt1.avif');
+    background-position: center center;
+    background-size: cover;
+}
+
+/* END PRODUIT */
+
+.traifoo{
+    width: 95%;
+    border: 1px solid #000;
+    margin: 15px auto;
 }
