@@ -6,6 +6,19 @@ body {
     background: rgba(255, 220, 219, 1);
     margin: 0;
     font-family: 'Poppins';
+    position: relative;
+}
+
+.top_con{
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    top: 240px;
+}
+
+.top_con a{
+    text-decoration: none;
+    color: #000;
 }
 
 .login {
@@ -13,13 +26,11 @@ body {
     background: #fff;
     text-align: center;
     padding: 30px;
-    /* border: 2px solid rgba(0, 0, 0, .65); */
     border-radius: 5px;
-    /* box-shadow: 0 0 20px rgba(0, 0, 0, .5); */
     margin: 0 auto;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 35%;
+    transform: translateY(-45%);
 }
 
 .login h1 {
@@ -29,8 +40,8 @@ body {
 
 .login h4 {
     font-weight: normal;
-    color: #856404;
-    background-color: #fff3cd;
+    color: #fff;
+    background-color: rgba(254, 102, 102, 0.612);
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, .2) inset;
@@ -45,25 +56,146 @@ body {
     font-size: 0.85em;
 }
 
-.login input[type="password"]{
+.login input[type="text"],input[type="email"],input[type="password"]{
     margin-top: 10px;
 }
 
 .login input[type="submit"]{
     width: 50%;
-    background: #17abb8;
+    background: #000;
     color: white;
-    box-shadow: 0 2px 0 rgb(0, 55, 135);
+    border: none;
+    border-radius: 10px;
     font-size: 1em;
     margin: 20px 0 5px 0;
     cursor: pointer;
 }
 
-div{
-    margin-top: 350px;
+.login .btn_ins{
+    background: #fff;
+    color: #000;
 }
-div > a{
-    text-decoration: none;
-    text-align: center;
+
+.login input[type="submit"]:hover{
+    background: rgba(234, 127, 127, 0.723);;
+}
+
+.lienOubl > a{
+    margin-top: 5px;
+    float: right;
+    color: rgb(95, 175, 236);
+}
+
+.btn_con{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 240px;
     color: rgba(254, 102, 102, 1);
 }
+
+.btn_con > a{
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgba(254, 102, 102, 1);
+    position: relative;
+}
+
+
+
+/* INSCRIPTION */
+
+.top{
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    top: 130px;
+}
+
+.top a{
+    text-decoration: none;
+    color: #000;
+}
+
+.signup {
+    width: 325px;
+    background: #fff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+}
+
+.signup h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.signup h4 {
+    font-weight: normal;
+    color: #fff;
+    background-color: rgba(254, 102, 102, 0.612);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2) inset;
+}
+
+.signup input {
+    font-family: inherit;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 2px;
+    font-size: 0.85em;
+}
+
+.signup input[type="text"],input[type="email"],input[type="password"]{
+    margin-top: 10px;
+}
+
+.signup input[type="submit"]{
+    width: 50%;
+    background: #fff;
+    color: #000;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 1em;
+    margin: 20px 0 5px 0;
+    cursor: pointer;
+}
+
+
+.signup input[type="submit"]:hover{
+    background: rgba(234, 127, 127, 0.723);;
+}
+
+.lienOubl > a{
+    margin-top: 5px;
+    float: right;
+    color: rgb(95, 175, 236);
+}
+
+.btn_ins{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 150px;
+    color: rgba(254, 102, 102, 1);
+}
+
+.btn_ins > a{
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgba(254, 102, 102, 1);
+    position: relative;
+}
+

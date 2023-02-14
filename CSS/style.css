@@ -5,6 +5,11 @@ body,html {
     box-sizing: border-box;
 }
 
+button{
+    cursor: pointer;
+}
+
+/* PAGE INDEX START */
 
 /* START-INFO */
 .info{
@@ -128,7 +133,7 @@ body,html {
 .cat .card_imgArr .card2{
     height: 600px;
     width: 25%;
-    background: url('../IMG/woman1.jpeg');
+    background: url('../IMG/Rectangle\ 19.png');
     background-position: center center;
     background-size: cover;
 }
@@ -167,7 +172,7 @@ body,html {
 }
 
 .mo1{
-    background: url('../IMG/shortHOP.jpeg');
+    background: url('../IMG/Product_Image-removebg-preview.png');
     background-position: center center;
     background-size: cover;
 }
@@ -179,7 +184,7 @@ body,html {
 }
 
 .mo3{
-    background: url('../IMG/t-shirt1.avif');
+    background: url('../IMG/Product\ Image\ \(1\).png');
     background-position: center center;
     background-size: cover;
 }
@@ -191,3 +196,133 @@ body,html {
     border: 1px solid #000;
     margin: 15px auto;
 }
+
+/* PAGE INDEX END */
+
+
+
+
+
+
+
+/* PAGE COLLECTION START */
+
+#sectionCol{
+    margin: 0 auto;
+}
+
+#sectionCol .images{
+    margin: 0 0 0 150px;
+}
+
+.titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0 25px 0;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.bloc_filtre{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.bloc_filtre .left{
+    width: 50%;
+}
+
+.bloc_filtre .right{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.card_imgPr{
+    /* background: #000; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    margin-bottom: 100px;
+}
+
+.card_imgPr .c{
+    width: 25%;
+    height: 370px;
+}
+
+.card_imgPr .c > .mo{
+    width:70%; 
+    height:350px;
+    margin-bottom: 15px;
+}
+
+.pied_card{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -100px;
+}
+
+.co1{
+    background: url('../IMG/pexels-david-bartus-297933.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.co2{
+    background: url('../IMG/woman1.jpeg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.co3{
+    background: url('../IMG/cat/cat-asse.jpeg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.co4{
+    background: url('../IMG/pexels-ylanite-koppens-934069.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.co5{
+    background: url('../IMG/trico.webp');
+    background-position: center center;
+    background-size: cover;
+}
+
+.co6{
+    background: url('../IMG/shoes_product.jpeg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.co7{
+    background: url('../IMG/bag-produit.jpeg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.co8{
+    background: url('../IMG/pexels-lukas-292999.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.co9{
+    background: url('../IMG/Product_Image-removebg-preview.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+/* PAGE COLLECTION END */
