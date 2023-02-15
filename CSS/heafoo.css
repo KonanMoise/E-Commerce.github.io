@@ -75,7 +75,18 @@ header .bloc_right div > input[type="search"]{
     margin: 0;
     width: 100%;
     height: 800px;
-    background-image: url("/IMG/h1.jpg");
+    background-image: url("../IMG/h1.jpg");
+    color: #000;
+}
+
+.headerpropos{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 800px;
+    background-image: url("../IMG/img_about.webp");
+    background-position: center center;
+    background-size: cover;
     color: #000;
 }
 

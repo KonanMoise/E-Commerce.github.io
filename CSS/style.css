@@ -336,29 +336,79 @@ button{
 *****************************************************************/
 
 
-/* PAGE PANIER START */
-#secPanier .top{
+/* PAGE DETAIL PANIER START */
+#secDETaiPanier .top{
     width: 70%;
     height: auto;
-    background-color: #856;
-    margin: 30px auto;
+    margin: 60px auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#secPanier .top .image{
+#secDETaiPanier .top .image{
     width: 40%;
     height: 50vh;
+    border: 2px solid rgba(255, 220, 219, 1);
     background: url("../IMG/pexels-ylanite-koppens-934069.jpg");
     background-position: center center;
     background-size: cover;
     background-color: #452;
 }
 
-#secPanier .top .description{
-    width: 40%;
-    background-color: #852;
+#secDETaiPanier .top .description{
+    width: 50%;
+    height: 50vh;
+    margin: 30px;
+    margin-left: 55px;
+}
+
+#secDETaiPanier .top .description h3{
+    font-size: 3.5em;
+    color: rgba(254, 102, 102, 1);
+}
+
+#secDETaiPanier .top .description p{
+    font-size: 1.5em;
+}
+#secDETaiPanier .top .btnT{
+    width: 60px;
+    height: 60px;
+    font-size: 1.7rem;
+    border: 2px solid #999;
+    background-color: #fff;
+}
+
+#secDETaiPanier .top .btn-detail{
+    width: 350px;
+    height: 50px;
+    font-size: 1.2rem;
+    color: #fff;
+    border: none;
+    background-color: #000;
+}
+
+.wrapperBtn{
+    float: right;
+    margin-right: 210px;
+    background-color: #fff;
+    border: 1px solid #000;
+    height: 50px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapperBtn > span{
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.wrapperBtn span.num{
+    font-size: 1.3rem;
 }
 
 /* PAGE PANIER END */
