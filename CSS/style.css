@@ -201,7 +201,9 @@ button{
 
 
 
-
+/************************Nouvelle page***************************
+*****************************************************************
+*****************************************************************/
 
 
 
@@ -326,3 +328,37 @@ button{
 }
 
 /* PAGE COLLECTION END */
+
+
+
+/************************Nouvelle page***************************
+*****************************************************************
+*****************************************************************/
+
+
+/* PAGE PANIER START */
+#secPanier .top{
+    width: 70%;
+    height: auto;
+    background-color: #856;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#secPanier .top .image{
+    width: 40%;
+    height: 50vh;
+    background: url("../IMG/pexels-ylanite-koppens-934069.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-color: #452;
+}
+
+#secPanier .top .description{
+    width: 40%;
+    background-color: #852;
+}
+
+/* PAGE PANIER END */
