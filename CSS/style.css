@@ -411,4 +411,91 @@ button{
     font-size: 1.3rem;
 }
 
-/* PAGE PANIER END */
+/* PAGE DETAILS PANIER END */
+
+
+
+/************************Nouvelle page***************************
+*****************************************************************
+*****************************************************************/
+
+/* START PANIER PAGE */
+
+.bloc_pan .topPan{
+    width: 58%;
+    margin: 0 auto;
+    margin-top: 50px;
+    line-height: 100%;
+}
+
+.bloc_pan .topPan h2{
+    font-size: 2.5em;
+    color:rgba(254, 102, 102, 1)
+}
+
+.bloc_pan .topPan p{
+    font-size: 1.7em;
+}
+
+.bloc_pan .bottm{
+    /* background-color: #742; */
+    width: 58%;
+    margin: 0 auto;
+    margin-top: 85px;
+    margin-bottom: 55px;
+    display: flex;
+
+}
+
+.bloc_pan .bottm .leftPan{
+    /* background-color: rgb(148, 253, 10); */
+    width: 55%;
+}
+
+
+.bloc_pan .bottm .leftPan .b1{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.bloc_pan .bottm .leftPan .b1 .imgPan{
+    width: 200px;
+    height: 200px;
+    background: url("../IMG/pexels-ylanite-koppens-934069.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.bloc_pan .bottm .leftPan .b1 .textPan{
+    margin-left: 25px;
+}
+
+.bloc_pan .bottm .leftPan .b1 .textPan h4{
+    font-size: 1.8rem;
+}
+
+.bloc_pan .bottm .leftPan .b1 .textPan .prixPan{
+    font-size: 1.5rem;
+}
+
+.bloc_pan .bottm .rightPan{
+    background-color: rgb(10, 67, 253);
+    width: 45%;
+}
+
+.traitPan{
+    border: 1px solid #b4b0b0;
+    margin: 15px 0;
+}
+
+.bloc_pan .bottm .rightPan .btn-detail{
+    width: 350px;
+    height: 50px;
+    font-size: 1.2rem;
+    color: #fff;
+    border: none;
+    background-color: #000;
+}
+
+/* END PANIER PAGE */
