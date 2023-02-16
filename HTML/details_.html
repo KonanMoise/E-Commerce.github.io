@@ -64,11 +64,11 @@
                 <button class="btnT">L</button>
                 <p style="color:#999;">Taille</p>
                 <p>
-                    <a href="panier.html"><button type="submit" class="btn-detail">Ajouter au panier - <span>10000 fcfa</span></button></a>                 
+                    <a href="panier.html"><button type="submit" class="btn-detail">Ajouter au panier - <span class="prix">10000</span> fcfa</button></a>                 
                     <span class="wrapperBtn">
-                        <span class="minus">-</span>
-                        <span class="num">01</span>
-                        <span class="plus">+</span>
+                        <button class="minus" style="border:none;background:#fff;">-</button>
+                        <input type="text" class="quantite" value="1" style="width: 20px;border:none;">
+                        <button class="plus" style="border:none;background:#fff;">+</button>
                     </span>
                 </p>
                 <p><a href="https://wa.me/0506348232"><button type="submit" class="btn-detail">Commander sur whatsapp</button></a></p>
@@ -145,5 +145,7 @@
         </div>
     </footer>
     <!-- end footer -->
+
+    <script src="../JS/script.js"></script>
 </body>
 </html>
