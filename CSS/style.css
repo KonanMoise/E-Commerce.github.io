@@ -1,18 +1,24 @@
-body,html {
+body,
+html {
     font-family: 'Open Sans', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-button{
+button {
     cursor: pointer;
 }
+
+
+/************************Nouvelle page***************************
+*****************************************************************
+*****************************************************************/
 
 /* PAGE INDEX START */
 
 /* START-INFO */
-.info{
+.info {
     width: 100%;
     margin: 85px 0;
     display: flex;
@@ -20,40 +26,41 @@ button{
     justify-content: space-evenly;
 }
 
-.info .info_left{
+.info .info_left {
     width: 30%;
     height: 250px;
     background: url('../IMG/solde1.webp');
     background-color: crimson;
 }
 
-.info .info_right{
+.info .info_right {
     width: 29.5%;
     height: 250px;
     background: url('../IMG/solde2.webp');
-    background-color:forestgreen;
+    background-color: forestgreen;
 }
+
 /* END-INFO */
 
 
 /* START CATEGORIES */
-.cat{
+.cat {
     text-align: center;
 }
 
-.cat .entete{
+.cat .entete {
     margin-bottom: 85px;
 }
 
-.cat .entete h2{
+.cat .entete h2 {
     font-size: 4em;
 }
 
-.cat .entete p{
+.cat .entete p {
     font-size: 1.5em;
 }
 
-.cat .entete button{
+.cat .entete button {
     color: #fff;
     font-size: 1em;
     padding: 10px 35px;
@@ -62,7 +69,7 @@ button{
     background: #000;
 }
 
-.cat .card_image{
+.cat .card_image {
     width: 100%;
     margin: 85px 0;
     display: flex;
@@ -70,7 +77,7 @@ button{
     justify-content: space-evenly;
 }
 
-.cat .card_image .card{
+.cat .card_image .card {
     position: relative;
     width: 20%;
     height: 350px;
@@ -83,12 +90,12 @@ button{
     justify-content: center;
 }
 
-.cat .card_image .card > div{
+.cat .card_image .card>div {
     position: absolute;
     bottom: 30px;
 }
 
-.cat .card_image .card div > button{
+.cat .card_image .card div>button {
     color: #000;
     font-weight: bold;
     font-size: 1.3em;
@@ -102,7 +109,7 @@ button{
 
 /* START ARRIVAGES */
 
-.cat .entete .but_blanc{
+.cat .entete .but_blanc {
     color: #000;
     font-weight: bold;
     font-size: 1.3em;
@@ -111,7 +118,8 @@ button{
     border-radius: 5px;
     background: #fff;
 }
-.card_imgArr{
+
+.card_imgArr {
     width: 100%;
     padding: 0;
     margin-bottom: 100px;
@@ -121,7 +129,7 @@ button{
     justify-content: space-evenly;
 }
 
-.cat .card_imgArr .card1{
+.cat .card_imgArr .card1 {
     height: 600px;
     width: 25%;
     background: url('../IMG/woman1.jpeg');
@@ -130,7 +138,7 @@ button{
     margin-top: 90px;
 }
 
-.cat .card_imgArr .card2{
+.cat .card_imgArr .card2 {
     height: 600px;
     width: 25%;
     background: url('../IMG/Rectangle\ 19.png');
@@ -138,7 +146,7 @@ button{
     background-size: cover;
 }
 
-.cat .card_imgArr .card3{
+.cat .card_imgArr .card3 {
     height: 600px;
     width: 25%;
     background: url('../IMG/woman2.jpeg');
@@ -153,37 +161,37 @@ button{
 
 
 /* START PRODUIT */
-.card_imgPr{
+.card_imgPr {
     /* background: #000; */
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 100px;
 }
 
-.card_imgPr .c{
+.card_imgPr .c {
     width: 25%;
     height: 370px;
 }
 
-.card_imgPr .c > .mo{
-    width:100%; 
-    height:350px;
+.card_imgPr .c>.mo {
+    width: 100%;
+    height: 350px;
     margin-bottom: 15px;
 }
 
-.mo1{
+.mo1 {
     background: url('../IMG/Product_Image-removebg-preview.png');
     background-position: center center;
     background-size: cover;
 }
 
-.mo2{
+.mo2 {
     background: url('../IMG/trico.webp');
     background-position: center center;
     background-size: cover;
 }
 
-.mo3{
+.mo3 {
     background: url('../IMG/Product\ Image\ \(1\).png');
     background-position: center center;
     background-size: cover;
@@ -191,7 +199,7 @@ button{
 
 /* END PRODUIT */
 
-.traifoo{
+.traifoo {
     width: 95%;
     border: 1px solid #000;
     margin: 15px auto;
@@ -209,15 +217,15 @@ button{
 
 /* PAGE COLLECTION START */
 
-#sectionCol{
+#sectionCol {
     margin: 0 auto;
 }
 
-#sectionCol .images{
+#sectionCol .images {
     margin: 0 0 0 150px;
 }
 
-.titre{
+.titre {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,27 +234,27 @@ button{
     text-decoration: underline;
 }
 
-.bloc_filtre{
+.bloc_filtre {
     width: 60%;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 25px;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 
-.bloc_filtre .left{
+.bloc_filtre .left {
     width: 50%;
 }
 
-.bloc_filtre .right{
+.bloc_filtre .right {
     width: 50%;
     display: flex;
     justify-content: end;
 }
 
-.card_imgPr{
+.card_imgPr {
     /* background: #000; */
     width: 100%;
     display: flex;
@@ -256,72 +264,72 @@ button{
     margin-bottom: 100px;
 }
 
-.card_imgPr .c{
+.card_imgPr .c {
     width: 25%;
     height: 370px;
 }
 
-.card_imgPr .c > .mo{
-    width:70%; 
-    height:350px;
+.card_imgPr .c>.mo {
+    width: 70%;
+    height: 350px;
     margin-bottom: 15px;
 }
 
-.pied_card{
+.pied_card {
     display: flex;
     justify-content: space-evenly;
     margin-left: -100px;
 }
 
-.co1{
+.co1 {
     background: url('../IMG/pexels-david-bartus-297933.jpg');
     background-position: center center;
     background-size: cover;
 }
 
-.co2{
+.co2 {
     background: url('../IMG/woman1.jpeg');
     background-position: center center;
     background-size: cover;
 }
 
-.co3{
+.co3 {
     background: url('../IMG/cat/cat-asse.jpeg');
     background-position: center center;
     background-size: cover;
 }
 
-.co4{
+.co4 {
     background: url('../IMG/pexels-ylanite-koppens-934069.jpg');
     background-position: center center;
     background-size: cover;
 }
 
-.co5{
+.co5 {
     background: url('../IMG/trico.webp');
     background-position: center center;
     background-size: cover;
 }
 
-.co6{
+.co6 {
     background: url('../IMG/shoes_product.jpeg');
     background-position: center center;
     background-size: cover;
 }
 
-.co7{
+.co7 {
     background: url('../IMG/bag-produit.jpeg');
     background-position: center center;
     background-size: cover;
 }
 
-.co8{
+.co8 {
     background: url('../IMG/pexels-lukas-292999.jpg');
     background-position: center center;
     background-size: cover;
 }
 
-.co9{
+.co9 {
     background: url('../IMG/Product_Image-removebg-preview.png');
     background-position: center center;
     background-size: cover;
@@ -337,7 +345,7 @@ button{
 
 
 /* PAGE DETAIL PANIER START */
-#secDETaiPanier .top{
+#secDETaiPanier .top {
     width: 70%;
     height: auto;
     margin: 60px auto;
@@ -346,7 +354,7 @@ button{
     justify-content: center;
 }
 
-#secDETaiPanier .top .image{
+#secDETaiPanier .top .image {
     width: 40%;
     height: 50vh;
     border: 2px solid rgba(255, 220, 219, 1);
@@ -356,22 +364,23 @@ button{
     background-color: #452;
 }
 
-#secDETaiPanier .top .description{
+#secDETaiPanier .top .description {
     width: 50%;
     height: 50vh;
     margin: 30px;
     margin-left: 55px;
 }
 
-#secDETaiPanier .top .description h3{
+#secDETaiPanier .top .description h3 {
     font-size: 3.5em;
     color: rgba(254, 102, 102, 1);
 }
 
-#secDETaiPanier .top .description p{
+#secDETaiPanier .top .description p {
     font-size: 1.5em;
 }
-#secDETaiPanier .top .btnT{
+
+#secDETaiPanier .top .btnT {
     width: 60px;
     height: 60px;
     font-size: 1.7rem;
@@ -379,7 +388,7 @@ button{
     background-color: #fff;
 }
 
-#secDETaiPanier .top .btn-detail{
+#secDETaiPanier .top .btn-detail {
     width: 350px;
     height: 50px;
     font-size: 1.2rem;
@@ -388,7 +397,7 @@ button{
     background-color: #000;
 }
 
-.wrapperBtn{
+.wrapperBtn {
     float: right;
     margin-right: 210px;
     background-color: #fff;
@@ -400,14 +409,14 @@ button{
     justify-content: center;
 }
 
-.wrapperBtn > span{
+.wrapperBtn>span {
     width: 100%;
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
 }
 
-.wrapperBtn span.num{
+.wrapperBtn span.num {
     font-size: 1.3rem;
 }
 
@@ -421,24 +430,23 @@ button{
 
 /* START PANIER PAGE */
 
-.bloc_pan .topPan{
+.bloc_pan .topPan {
     width: 58%;
     margin: 0 auto;
     margin-top: 50px;
     line-height: 100%;
 }
 
-.bloc_pan .topPan h2{
+.bloc_pan .topPan h2 {
     font-size: 2.5em;
-    color:rgba(254, 102, 102, 1)
+    color: rgba(254, 102, 102, 1);
 }
 
-.bloc_pan .topPan p{
+.bloc_pan .topPan p {
     font-size: 1.7em;
 }
 
-.bloc_pan .bottm{
-    /* background-color: #742; */
+.bloc_pan .bottm {
     width: 58%;
     margin: 0 auto;
     margin-top: 85px;
@@ -447,19 +455,18 @@ button{
 
 }
 
-.bloc_pan .bottm .leftPan{
-    /* background-color: rgb(148, 253, 10); */
+.bloc_pan .bottm .leftPan {
     width: 55%;
 }
 
 
-.bloc_pan .bottm .leftPan .b1{
+.bloc_pan .bottm .leftPan .b1 {
     display: flex;
     align-items: center;
     justify-content: baseline;
 }
 
-.bloc_pan .bottm .leftPan .b1 .imgPan{
+.bloc_pan .bottm .leftPan .b1 .imgPan {
     width: 200px;
     height: 200px;
     background: url("../IMG/pexels-ylanite-koppens-934069.jpg");
@@ -467,35 +474,321 @@ button{
     background-size: cover;
 }
 
-.bloc_pan .bottm .leftPan .b1 .textPan{
+.bloc_pan .bottm .leftPan .b1 .textPan {
     margin-left: 25px;
 }
 
-.bloc_pan .bottm .leftPan .b1 .textPan h4{
+.bloc_pan .bottm .leftPan .b1 .textPan h4 {
     font-size: 1.8rem;
 }
 
-.bloc_pan .bottm .leftPan .b1 .textPan .prixPan{
+.bloc_pan .bottm .leftPan .b1 .textPan .prixPan {
     font-size: 1.5rem;
 }
 
-.bloc_pan .bottm .rightPan{
-    background-color: rgb(10, 67, 253);
+.bloc_pan .bottm .rightPan {
     width: 45%;
+    padding: 8% 5%;
 }
 
-.traitPan{
+.bloc_pan .bottm .rightPan h4 {
+    font-size: 1.8rem;
+}
+
+.traitPan {
     border: 1px solid #b4b0b0;
     margin: 15px 0;
 }
 
-.bloc_pan .bottm .rightPan .btn-detail{
+.bloc_pan .bottm .rightPan .btn-detail {
     width: 350px;
     height: 50px;
+    text-decoration: underline;
     font-size: 1.2rem;
-    color: #fff;
+    color: #000;
     border: none;
-    background-color: #000;
+    border-radius: 10px;
+    background-color: rgba(255, 220, 219, 1);
 }
 
 /* END PANIER PAGE */
+
+
+/* START APROPOS PAGE */
+
+
+.headerpropos .contenu {
+    width: 40%;
+    text-align: start;
+    position: absolute;
+    top: 38%;
+    left: 13%;
+    font-size: 4em;
+}
+
+/* partie compagnie */
+#blocCompagne {
+    width: 100%;
+    margin: 80px 0;
+}
+
+#blocCompagne .titre {
+    background-color: rgba(255, 220, 219, 1);
+    padding: 20px 0;
+}
+
+#blocCompagne .contenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#blocCompagne .contenu .sous-contenu {
+    width: 20%;
+    display: block;
+    align-items: center;
+    margin-left: 250px;
+}
+
+#blocCompagne .contenu .sous-contenu h4 {
+    font-size: 2em;
+
+}
+
+#blocCompagne .contenu .sous-contenu p {
+    font-size: 1.3em;
+}
+
+#blocCompagne .contenu .imgAcol {
+    width: 30%;
+    margin-right: 100px;
+}
+
+#blocCompagne .contenu .imgAcol img {
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+
+/* partie contact */
+
+#blocContact {
+    width: 100%;
+    margin: 80px 0;
+}
+
+#blocContact .titre {
+    background-color: rgba(255, 220, 219, 1);
+    padding: 20px 0;
+}
+
+#blocContact .contenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#blocContact .contenu .sous-contenu {
+    margin-left: -200px;
+}
+
+#blocContact .contenu .sous-contenu a {
+    font-size: 1.6em;
+    color: #000;
+    text-decoration: none;
+}
+
+#blocContact .contenu .sous-contenu a>i {
+    color: rgba(254, 102, 102, 1);
+}
+
+#blocContact .contenu .imgAcol img {
+    width: 450px;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* END APROPOS PAGE */
+
+
+
+
+/************************Nouvelle page***************************
+*****************************************************************
+*****************************************************************/
+
+
+/* START CONTACT PAGE */
+
+#contact {
+    position: relative;
+    height: 90vh;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact .content {
+    max-width: 800px;
+    text-align: center;
+    padding: 0;
+}
+
+#contact .content h2 {
+    font-size: 5em;
+    font-weight: 300;
+}
+
+#contact .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#contact .container .contactInfo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid;
+    margin-right: 50px;
+}
+
+#contact .container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+#contact .container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background-color: rgba(255, 220, 219, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#contact .container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+#contact .container .contactInfo .box .text h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: rgba(254, 102, 102, 1);
+}
+
+#contact .container .contactInfo .box .text p{
+    font-size: 1.7em;
+    font-weight: 500;
+}
+
+#contact .container .contactForm {
+    width: 30%;
+    height: 35vh;
+    padding: 30px;
+    background: rgba(255, 220, 219, 1);
+}
+
+#contact .container .contactForm h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#contact .container .contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#contact .container .contactForm .inputBox input,
+#contact .container .contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #bababa;
+    outline: none;
+    resize: none;
+}
+
+#contact .contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+#contact .contactForm .inputBox input:focus ~ span, 
+#contact .contactForm .inputBox input:valid ~ span, 
+#contact .contactForm .inputBox textarea:focus ~ span, 
+#contact .contactForm .inputBox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+#contact .contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #fff;
+    color: #e91e63;
+    border: none;
+    cursor: pointer; 
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10%;
+}
+
+.lesinfo{
+    width: 100%;
+    padding: 30px;
+    background: rgba(255, 220, 219, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 30%;
+    margin-bottom: 50px;
+}
+
+.lesinfo p{
+    font-size: 3rem;
+}
+
+.lesinfo span{
+    font-size: 2rem;
+}
+
+@media (max-width: 991px) {
+    #contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,.contactForm{
+        width: 100%;
+    }
+}
+/* END CONTACT PAGE */
+
+
