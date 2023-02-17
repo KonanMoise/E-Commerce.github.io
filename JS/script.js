@@ -1,98 +1,110 @@
 
 // Logique du button ajouter
-let btnPlus = document.querySelector('.plus'),
-btnMinus = document.querySelector('.minus');
+// let btnPlus = document.querySelector('.plus'),
+// btnMinus = document.querySelector('.minus');
 
-btnPlus.addEventListener('click', ()=>{
-    document.querySelector('.quantite').value = parseInt(document.querySelector('.quantite').value) + 1;
-    subTotal();
-});
+// btnPlus.addEventListener('click', ()=>{
+//     document.querySelector('.quantite').value = parseInt(document.querySelector('.quantite').value) + 1;
+//     subTotal();
+// });
 
-btnMinus.addEventListener('click', ()=>{
-    if (document.querySelector('.quantite').value > 0){
-        document.querySelector('.quantite').value = parseInt(document.querySelector('.quantite').value) - 1;
-        subTotal();
-    }
-});
+// btnMinus.addEventListener('click', ()=>{
+//     if (document.querySelector('.quantite').value > 0){
+//         document.querySelector('.quantite').value = parseInt(document.querySelector('.quantite').value) - 1;
+//         subTotal();
+//     }
+// });
 
-function subTotal(){
-    let prix = parseInt(document.querySelector(".prix").innerText);
-    let quantite = parseInt(document.querySelector(".quantite").value);
-    let subT = prix*quantite
+// function subTotal(){
+//     let prix = parseInt(document.querySelector(".prix").innerText);
+//     let quantite = parseInt(document.querySelector(".quantite").value);
+//     let subT = prix*quantite
 
-    document.querySelector(".prix").innerText = subT
-}
+//     document.querySelector(".prix").innerText = subT
+// }
+
+
 
 
 // Logique du panier
 
+// class Article{
+//     constructor(){
+//         let article = localStorage.getItem("article");
+//         if (article == null){
+//             this.article = []; 
+//         } else{
+//             this.article = JSON.parse(article);
+//         }
+//     }
 
-class Article{
+//     save(){
+//         localStorage.setItem("article", JSON.stringify(this.article));
+//     }
+
+//     add(product){
+//         let foundProduct = this.article.find(p => p.id == product.id);
+//         if (foundProduct != undefined){
+//             foundProduct.quantite++;
+//         } else{
+//             product.quantite = 1;
+//             this.article.push(product);
+//         }
+//         this.save();
+//     }
     
-}
-
-function saveArticle(article){
-    localStorage.setItem("prduct", JSON.stringify(article));
-}
-
-function getArticle(){
-    let article = localStorage.getItem("article");
-    if (article == null){
-        return [];
-    } else{
-        return JSON.parse(article);
-    }
-}
-
-function addArticle(product){
-    let article = getArticle();
-    let foundProduct = article.find(p => p.id == product.id);
-    if (foundProduct != undefined){
-        foundProduct.quantite++;
-    } else{
-        foundProduct.quantite = 1;
-        article.push(product);
-    }
-    saveArticle(article);
-}
+//     remove(){
+//         this.article = this.article.filtre(p => p.id == product.id);
+//         this.save();    
+//     }
 
 
-function removeFromArticle(){
-    let article = getArticle();
-    article = article.filtre(p => p.id == product.id);
-    saveArticle(article);    
-}
+//     changeQuantity(product, quantite){
+//         let foundProduct = this.article.find(p => p.id == product.id);
+//         if (foundProduct != undefined){
+//             foundProduct.quantite += quantite;
+//             if (foundProduct.quantite <= 0){
+//                 remove(foundProduct);
+//             } else{
+//                 save();
+//             }
+//         }
+//     }
+
+//     getNumberArticle(){
+//         let number = 0;
+//         for (let item of this.article){
+//             number += item.quantite;
+//         }
+//         return number;
+//     }
+
+//     getTotalPrice(){
+//         let total = 0;
+//         for (let item of this.article){
+//             total += item.quantite * item.prix;
+//         }
+//         return total;
+//     }
+// }
 
 
-function changeQuantity(product, quantite){
-    let article = getArticle();
-    let foundProduct = article.find(p => p.id == product.id);
-    if (foundProduct != undefined){
-        foundProduct.quantite += quantite;
-        if (foundProduct.quantite <= 0){
-            removeFromArticle(foundProduct);
-        } else{
-            saveArticle();
-        }
-    }
-}
+// Logique form
+
+// let btnIns = document.querySelector(".butIns");
 
 
-function getNumberArticle(){
-    let article = getArticle();
-    let number = 0;
-    for (let item of article){
-        number += item.quantite;
-    }
-    return number;
-}
+// btnIns.addEventListener('click', ()=>{
 
+//     // stocker dans le Local Storage
+//     localStorage.setItem("Nom", document.querySelector("#nom").value);
+//     localStorage.setItem("Prénom", document.querySelector("#prenom").value);
+//     localStorage.setItem("E-mail", document.querySelector("#email").value);
+//     localStorage.setItem("Mot de passe", document.querySelector("#motDePasse").value);
+//     localStorage.setItem("Confirme Mot de passe", document.querySelector("#confirmeMotDePasse").value);
+//     console.log(document.querySelector("#nom").value);
 
-function getTotalPrice(){
-    let article = getArticle();
-    let total = 0;
-    for (let item of article){
-        total += item.quantite * item.prix;
-    }
-    return total;
-}
+//     // récupérer et afficher les données sur la page
+//     document.querySelector("#fullName").innerHTML = localStorage.getItem("Nom");
+//     console.log(document.querySelector("#fullName").innerHTML)
+// });

@@ -11,16 +11,18 @@
     <div class="top_con">
         <a href="../index.html"><h1>Moko & Co<span style="color:rgba(254, 102, 102, 1);">.</span></h1></a>
     </div>
-    <form action="#" class="login">
+    <form class="login" novalidate>
         <h1>Connexion</h1>
         <h4>Connectez-vous avec e-mail</h4>
-        <input type="email" placeholder="e-mail">
-        <input type="password" placeholder="Mot de passe">
-        <input type="submit" value="Connexion"><br>
+        <input type="email" id="emailCon" name="email" placeholder="e-mail">
+        <input type="password" id="motDePasseCon" name="motDePasse" placeholder="Mot de passe">
+        <input type="submit" id="btnCon" value="Connexion"><br>
         <div class="lienOubl"><a href="">Mot de passe oublié?</a></div>
     </form>
     <div class="btn_con">
         <a href="signup.html"><p>ou créer un compte</p></a>
     </div>
+
+    <script src="../JS/login.js"></script>
 </body>
 </html>

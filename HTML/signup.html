@@ -14,15 +14,20 @@
     <form action="#" class="signup">
         <h1>Inscription</h1>
         <h4>Créer un compte avec e-mail</h4>
-        <input type="text" placeholder="nom">
-        <input type="text" placeholder="Prenom">
-        <input type="email" placeholder="e-mail">
-        <input type="password" placeholder="Mot de passe">
-        <input type="password" placeholder="Comfirmer mot de passe">
-        <input type="submit" value="S'inscrire">
+        <input type="text" id="nom" name="nom" placeholder="nom">
+        <input type="text" id="prenom" name="prenom" placeholder="Prenom">
+        <input type="email" id="email" name="email" placeholder="e-mail">
+        <input type="password" id="motDePasse" name="motDePasse" placeholder="Mot de passe">
+        <input type="password" id="confirmeMotDePasse" placeholder="Comfirmer mot de passe">
+        <input type="submit" class="butIns" value="S'inscrire">
     </form>
     <div class="btn_ins">
         <a href="login.html"><p>ou connexion</p></a>
     </div>
+    <div class="ident">
+        <p>Salut, Mr/Mne <span id="fullName"></span></p>
+    </div>
+
+    <!-- <script src="../JS/signup.js"></script> -->
 </body>
 </html>
