@@ -16,30 +16,46 @@ btnMinus.addEventListener('click', ()=>{
 });
 
 function subTotal(){
-    let prix = parseInt(document.querySelector(".prix").innerText);
+    let prix = parseInt(document.querySelector(".static_price").innerText);
     let quantite = parseInt(document.querySelector(".quantite").value);
-    let subT = prix*quantite
+    let subT = eval(prix*quantite)
 
-    document.querySelector(".prix").innerText = subT
+    console.log("le prix" + prix)
+    console.log(" la quntité " + quantite)
+    console.log(subT)
+
+    document.querySelector(".prix").innerHTML = subT
 }
 
+let TetDet = document.querySelector('.TeT');
 
+console.log(document.querySelectorAll('.TeT'))
+document.querySelectorAll('.TeT').forEach(item => {
+    item.addEventListener('click', (e) => {
+        const parent = e.target.closest('.c')
+        const src = parent.querySelector('img').src
+        let imageDet = document.querySelector('.image');
+        console.log(imageDet.style.background)
+        console.log(src)
+        imageDet.style.background = `url(${src})`
+        imageDet.style.backgroundSize = 'cover'
+    })
+})
+
+
+
+
+function save(article){
+    localStorage.setItem("article", JSON.stringify(article));
+}
 
 
 // Logique du panier
 
 class Article{
-    constructor(){
-        let article = localStorage.getItem("article");
-        if (article == null){
-            this.article = []; 
-        } else{
-            this.article = JSON.parse(article);
-        }
-    }
 
-    save(){
-        localStorage.setItem("article", JSON.stringify(this.article));
+    save(article){
+        localStorage.setItem("article", JSON.stringify(article));
     }
 
     add(product){
