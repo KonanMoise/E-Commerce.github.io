@@ -14,6 +14,6 @@ btnIns.addEventListener('click', ()=>{
     console.log(document.querySelector("#nom").value);
 
     // récupérer et afficher les données sur la page
-    document.querySelector("#fullName").innerHTML = localStorage.getItem("Nom");
-    console.log(document.querySelector("#fullName").innerHTML)
+    // document.querySelector("#fullName").innerHTML = localStorage.getItem("Nom");
+    // console.log(document.querySelector("#fullName").innerHTML);
 });

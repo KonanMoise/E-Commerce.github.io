@@ -8,10 +8,6 @@ document.querySelector('form').addEventListener('submit', (e) =>{
     e.preventDefault()
     console.log('form submit')
 
-    // console.log(document.querySelector("#emailCon").innerHTML);
-    // console.log(document.querySelector("#motDePasseCon").innerHTML);
-    // console.log(localStorage.getItem("E-mail"));
-    // console.log(localStorage.getItem("Mot de passe"))
     console.log("debut");
     console.log(document.querySelector("#emailCon").value)
     console.log(document.querySelector('#motDePasseCon').value)
@@ -21,7 +17,7 @@ document.querySelector('form').addEventListener('submit', (e) =>{
         document.querySelector("#emailCon").value === localStorage.getItem("E-mail") &&
         document.querySelector("#motDePasseCon").value === localStorage.getItem("Mot de passe")
     ){
-        window.location.href = "http://localhost:5500/index.html";
+        window.location.href = "http://localhost:5500/HTML/userCon.html";
     } else{
         window.location.href = "http://localhost:5500/HTML/login.html";
     }
