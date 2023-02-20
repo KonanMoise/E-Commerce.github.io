@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Moko & Co</title>
+    <title>Détails - Moko & Co</title>
 
     <!-- lien css du style_principal -->
     <link rel="stylesheet" href="../CSS/style.css">
@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
-    <!-- start header -->
+    <!-- start navbar -->
     <header>
         <div class="top2top">
             <div>CIV</div>
@@ -27,11 +26,11 @@
         <div class="top_header">
             <div class="bloc_menu">
                 <ul class="menu">
-                    <li><a href="#" class="logo">Moko & Co<span style="color:rgba(254, 102, 102, 1);">.</span></a></li>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="collection.html">Collection</a></li>
-                    <li><a href="apropos.html">A propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="indexCon.html" class="logo">Moko & Co<span style="color:rgba(254, 102, 102, 1);">.</span></a></li>
+                    <li><a href="indexCon.html">Accueil</a></li>
+                    <li><a href="collectionCon.html">Collection</a></li>
+                    <li><a href="aproposCon.html">A propos</a></li>
+                    <li><a href="contactCon.html">Contact</a></li>
                 </ul>    
             </div>
             <div class="bloc_right">
@@ -43,82 +42,47 @@
                     <i class="fa fa-cart-shopping"></i> <span style="color:#000;">3</span>
                 </div>
                 <div>
-                    <a href="login.html">Connexion</a>
+                    <a href="../index.html">deconnexion</a>
                 </div>
             </div>
         </div>
-        <div class="headerlocal">
-            <div class="contenu">
-                <h3 style="font-size:2em;">Vacance d'été</h3>
-                <h1 style="color:rgba(254, 102, 102, 1);font-size:5em;">Accessoires</h1>
-                <p style="font-size:1.5em;">Nous ajoutons un nouvel article dans le stock</p>
-            </div>
-        </div>
     </header>
-    <!-- end header -->
-    
-    <!-- start info -->
-    <div class="info">
-        <div class="info_left"></div>
-        <div class="info_right"></div>
-    </div>
-    <!-- end info -->
+    <!-- end navbar -->
 
-    <!-- start categories -->
-    <div class="cat">
-        <div class="entete">
-            <h2>Categories</h2>
-            <p>Des créations exigeantes, pensées pour s'adapter à la vie <br> d'aujourd’hui avec chic et discrétion.</p>
-            <button>Voir tout</button>
+    <section id="secDETaiPanier">
+        <div class="top">
+            <div class="image"></div>
+            <div class="description">
+                <h3>Chemise Thonny</h3>
+                <p>
+                    10000 fcfa <br><br>
+                    Cette chemiseà été fabriquer par <br>
+                    Thonny, bon tissu et resistant.
+                </p>
+                <button class="btnT">S</button>
+                <button class="btnT">M</button>
+                <button class="btnT">L</button>
+                <p style="color:#999;">Taille</p>
+                <p>
+                    <a href="panierCon.html"><button type="submit" class="btn-detail">Ajouter au panier - <span class="prix">10000</span> fcfa</button></a>                 
+                    <span class="wrapperBtn">
+                        <button class="minus" style="border:none;background:#fff;">-</button>
+                        <input type="text" class="quantite" value="1" style="width: 20px;border:none;">
+                        <button class="plus" style="border:none;background:#fff;">+</button>
+                    </span>
+                </p>
+                <p><a href="https://wa.me/0506348232"><button type="submit" class="btn-detail">Commander sur whatsapp</button></a></p>
+            </div>
         </div>
-        <div class="card_image">
-            <div class="card">
-                <div><button>Magasin Homme</button></div>
-            </div>
-            <div class="card" style="background: url('../IMG/cat/cat-asse.jpeg') center center;">
-                <div><button>Accessoires</button></div>
-            </div>
-            <div class="card" style="background: url('../IMG/cat/wooman-cat.jpeg') center center;">
-                <div><button>Magasin Femme</button></div>
-            </div>
-        </div>
-    </div>
-    <!-- end categories -->
+    </section>
 
-    <!-- start arrivages -->
-    <div class="cat">
-        <div class="entete">
-            <h2>Nos derniers arrivages</h2>
-            <p>Des créations exigeantes, pensées pour s'adapter à la vie <br> d'aujourd’hui avec chic et discrétion.</p>
-            <button class="but_blanc">Voir tout</button>
-        </div>
-        <div class="card_imgArr">
-            <div class="card1">
-                  
-            </div>
-            <div class="card2">
-                   
-            </div>
-            <div class="card3">
-                
-            </div>
-        </div>
-    </div>
-    <!-- end arrivages -->
-
-    <!-- start produit -->
-    <div class="cat">
-        <div class="entete">
-            <h2>Produit</h2>
-            <p>Des créations exigeantes, pensées pour s'adapter à la vie <br> d'aujourd’hui avec chic et discrétion.</p>
-            <button><a href="collection.html" style="color:#fff;"> Voir tout</a></button>
-        </div>
+    <section>
         <div class="card_imgPr">
             <div class="c">
                 <div class="mo mo1">
                 </div>
                 <div style="text-align:left">
-                    <h3><a href="collection.html" style="color: #000;">Pull skye</a></h3>
+                    <h3><a href="collectionCon.html" style="color: #000;">Pull skye</a></h3>
                     <p>5000 fcfa</p>
                 </div>
             </div>
@@ -126,7 +90,7 @@
                 <div class="mo mo2">
                 </div>
                 <div style="text-align:left">
-                    <h3><a href="collection.html" style="color: #000;">Tricot</a></h3>
+                    <h3><a href="collectionCon.html" style="color: #000;">Tricot</a></h3>
                     <p>15000 fcfa</p>
                 </div>
             </div>
@@ -134,14 +98,14 @@
                 <div class="mo mo3">
                 </div>
                 <div style="text-align:left">
-                    <h3><a href="collection.html" style="color: #000;">Pull</a></h3>
+                    <h3><a href="collectionCon.html" style="color: #000;">Pull</a></h3>
                     <p>8000 fcfa</p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- end produit -->
+    </section>
 
+    <!-- trait de bas -->
     <div class="traifoo"></div>
 
     <!-- start footer -->
@@ -171,9 +135,9 @@
             <div class="fooHea footer4">
                 <h2>Liens</h2>
                 <a href="#">Accueil</a>
-                <a href="collection.html">Collection</a>
-                <a href="apropos.html">A propos</a>
-                <a href="contact.html">Contact</a>
+                <a href="collectionCon.html">Collection</a>
+                <a href="aproposCon.html">A propos</a>
+                <a href="contactcon.html">Contact</a>
             </div>
         </div>
         <div class="top2top">
@@ -182,6 +146,6 @@
     </footer>
     <!-- end footer -->
 
-    <script src="../JS/login.js"></script>
+    <script src="../JS/script.js"></script>
 </body>
 </html>
