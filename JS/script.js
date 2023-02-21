@@ -49,57 +49,58 @@ function save(article){
     localStorage.setItem("article", JSON.stringify(article));
 }
 
+// function add(product){
+//     let foundProduct = this.article.find(p => p.id == product.id);
+//     if (foundProduct != undefined){
+//         foundProduct.quantite++;
+//     } else{
+//         product.quantite = 1;
+//         this.article.push(product);
+//     }
+//     this.save();
+// }
 
-// Logique du panier
+// // Logique du panier
 
-class Article{
+// class Article{
 
-    save(article){
-        localStorage.setItem("article", JSON.stringify(article));
-    }
+//     save(article){
+//         localStorage.setItem("article", JSON.stringify(article));
+//     }
 
-    add(product){
-        let foundProduct = this.article.find(p => p.id == product.id);
-        if (foundProduct != undefined){
-            foundProduct.quantite++;
-        } else{
-            product.quantite = 1;
-            this.article.push(product);
-        }
-        this.save();
-    }
+
     
-    remove(){
-        this.article = this.article.filtre(p => p.id == product.id);
-        this.save();    
-    }
+//     remove(){
+//         this.article = this.article.filtre(p => p.id == product.id);
+//         this.save();    
+//     }
 
 
-    changeQuantity(product, quantite){
-        let foundProduct = this.article.find(p => p.id == product.id);
-        if (foundProduct != undefined){
-            foundProduct.quantite += quantite;
-            if (foundProduct.quantite <= 0){
-                remove(foundProduct);
-            } else{
-                save();
-            }
-        }
-    }
+//     changeQuantity(product, quantite){
+//         let foundProduct = this.article.find(p => p.id == product.id);
+//         if (foundProduct != undefined){
+//             foundProduct.quantite += quantite;
+//             if (foundProduct.quantite <= 0){
+//                 remove(foundProduct);
+//             } else{
+//                 save();
+//             }
+//         }
+//     }
 
-    getNumberArticle(){
-        let number = 0;
-        for (let item of this.article){
-            number += item.quantite;
-        }
-        return number;
-    }
+//     getNumberArticle(){
+//         let number = 0;
+//         for (let item of this.article){
+//             number += item.quantite;
+//         }
+//         return number;
+//     }
 
-    getTotalPrice(){
-        let total = 0;
-        for (let item of this.article){
-            total += item.quantite * item.prix;
-        }
-        return total;
-    }
-}
+//     getTotalPrice(){
+//         let total = 0;
+//         for (let item of this.article){
+//             total += item.quantite * item.prix;
+//         }
+//         return total;
+//     }
+// }

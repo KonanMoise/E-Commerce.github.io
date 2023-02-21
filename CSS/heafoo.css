@@ -218,3 +218,35 @@ footer .top2top{
     justify-content: center;
     height: 40px;
 }
+
+
+
+/* RESPONSIVITE INDEX */
+
+@media (max-width:1530px) {
+
+    .headerlocal{
+        background-position: center center;
+        background-size: cover;
+    }
+    .headerlocal .contenu{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:986px) {
+
+    .headerlocal{
+        background-position: center center;
+        background-size: cover;
+    }
+    .headerlocal .contenu{
+        position: absolute;
+        text-align: center;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+}

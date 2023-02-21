@@ -794,3 +794,13 @@ button {
 /* END CONTACT PAGE */
 
 
+
+/* RESPOSIVE INFO INDEX */
+@media (max-width:1076px) {
+    .info{
+        flex-direction: column;
+    }
+    .info .info_left{
+        margin-bottom: 15px;
+    }
+}
