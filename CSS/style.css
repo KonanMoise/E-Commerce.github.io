@@ -285,6 +285,7 @@ button {
     background: url('../IMG/pexels-david-bartus-297933.jpg');
     background-position: center center;
     background-size: cover;
+    resize: none;
 }
 
 .co2 {
@@ -802,5 +803,16 @@ button {
     }
     .info .info_left{
         margin-bottom: 15px;
+    }
+}
+
+@media (max-width:1509px) {
+    .cat .card_image{
+        display: flex;
+        flex-direction: column;
+    }
+    .cat .card_image > .card{
+       flex-grow: 10;
+       resize: none;
     }
 }

@@ -1,21 +1,36 @@
-
 // localStorage.setItem("E-mail", document.querySelector("#emailCon").value);
 // localStorage.setItem("Mot de passe", document.querySelector("#motDePasseCon").value);
 let btnCon = document.querySelector("#btnCon");
 
 const form = document.querySelector('form')
-document.querySelector('form').addEventListener('submit', (e) =>{
+form.addEventListener('submit', (e) =>{
     e.preventDefault()
 
-    if (
-        document.querySelector("#emailCon").value === localStorage.getItem("E-mail") &&
-        document.querySelector("#motDePasseCon").value === localStorage.getItem("Mot de passe")
-    ){
-        window.location.href = "http://localhost:5500/UserHtml/indexCon.html";
-    } else{
-        window.location.href = "http://localhost:5500/HTML/login.html";
+    tabUser = JSON.parse(localStorage.getItem('userList'))
+    let result;
+    tabUser.forEach(itemUser => {
+        if (
+            document.querySelector("#emailCon").value === itemUser.email &&
+            document.querySelector("#motDePasseCon").value === itemUser.motdepasse
+            
+            
+        ){
+          result = itemUser;
+          console.log(itemUser)
+        }
+        
+    });
 
+    console.log(typeof result)
+    if (typeof result !== "undefined"){
+
+        window.location.replace( "http://127.0.0.1:5500/UserHtml/indexCon.html");
+        console.log(typeof result)
     }
+    else{
+        window.location.reload()
+    }
+   
 })
 
 btnCon.addEventListener('submit', (e)=>{
