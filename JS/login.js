@@ -8,15 +8,15 @@ form.addEventListener('submit', (e) =>{
 
     tabUser = JSON.parse(localStorage.getItem('userList'))
     let result;
-    tabUser.forEach(itemUser => {
+    tabUser.forEach(element => {
         if (
-            document.querySelector("#emailCon").value === itemUser.email &&
-            document.querySelector("#motDePasseCon").value === itemUser.motdepasse
+            document.querySelector("#emailCon").value === element.email &&
+            document.querySelector("#motDePasseCon").value === element.motdepasse
             
             
         ){
-          result = itemUser;
-          console.log(itemUser)
+          result = element;
+          console.log(element)
         }
         
     });
@@ -24,7 +24,7 @@ form.addEventListener('submit', (e) =>{
     console.log(typeof result)
     if (typeof result !== "undefined"){
 
-        window.location.replace( "http://127.0.0.1:5500/UserHtml/indexCon.html");
+        window.location.replace("http://127.0.0.1:5500/UserHtml/indexCon.html");
         console.log(typeof result)
     }
     else{
