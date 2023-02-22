@@ -4,13 +4,14 @@ let btnPlus = document.querySelector('.plus'),
 btnMinus = document.querySelector('.minus');
 
 btnPlus.addEventListener('click', ()=>{
-    document.querySelector('.quantite').value = parseInt(document.querySelector('.quantite').value) + 1;
+    let quntite = document.querySelector('.quantite').value;
+    quntite = parseInt(quntite) + 1;
     subTotal();
 });
 
 btnMinus.addEventListener('click', ()=>{
-    if (document.querySelector('.quantite').value > 0){
-        document.querySelector('.quantite').value = parseInt(document.querySelector('.quantite').value) - 1;
+    if (quntite > 0){
+        quntite = parseInt(quntite) - 1;
         subTotal();
     }
 });
@@ -40,11 +41,10 @@ TetDet.forEach(item => {
         const parent = e.target.closest('.c')
         const nomA = parent.querySelector('.elem .TeT');
         const prixA = parent.querySelector('.elem .prixEle');
-        console.log(prixA.textContent)
         const src = parent.querySelector('img').src
-        let imageDet = document.querySelector('.image');
-        imageDet.style.background = `url(${src})`;
-        imageDet.style.backgroundSize = 'cover';
+        let imageDet = document.querySelector('.image img');
+        console.log('source : ', src)
+        imageDet.src = src;
         nomARt.innerHTML = nomA.textContent;
         prix.textContent = prixA.innerHTML;
         parAjout.textContent = prixA.innerHTML; 
@@ -55,13 +55,18 @@ TetDet.forEach(item => {
 
 // Logique du panier
 
-let nom = document.querySelector('.nomARt');
-let prixAjout = document.querySelector('.static_price');
-let quntiteAjout = document.querySelector('.quantite');
+let nom = document.querySelector('.nomARt').innerHTML;
+let prixAjout = document.querySelector('.static_price').innerHTML;
+let quntiteAjout = document.querySelector('.quantite').value;
+
+console.log(nom)
+console.log(prixAjout)
+console.log(quntiteAjout)
 
 let product = {
     nom: nom,
     prix: prixAjout,
+    quantite: quntiteAjout,
 }
 
 function saveArticle(article){
@@ -69,8 +74,8 @@ function saveArticle(article){
 }
 
 function getArticle(){
-    let article = localStorage.getItem("basket");
-    if (basket == null){
+    let article = localStorage.getItem("article");
+    if (article == null){
         return [];
     } else{
         return JSON.parse(article);
@@ -79,7 +84,7 @@ function getArticle(){
 
 function addArticle(product){
     let article = getArticle();
-    let foundProduct = article.find(p => p.id == product.id);
+    let foundProduct = article.find(p => p.nom == product.nom);
     if (foundProduct != undefined){
         foundProduct.quantite++;
     } else{
@@ -92,7 +97,7 @@ function addArticle(product){
 function removeArticle(){
     let article = getArticle();
     article = article.filter(p => p.id == product.id);
-    save();    
+    save();
 }
 
 function changeQuantity(product, quantite){
@@ -126,41 +131,40 @@ function getTotalPrice(){
     return total;
 }
 
-let ajoutPan = document.querySelector('.AjoutPan');
+let ajoutPan = document.querySelector('#AjoutPan');
 ajoutPan.addEventListener('click', ()=>{
     addArticle(product);
-    ajoutPan.style.display = 'none'
 })
 
 
 // recuperer les data du details 
-function redirectpanier(){
-    let btnAjout = document.querySelector('.btn-detail');
-    btnAjout.addEventListener('click', (e)=>{
-        const dataList = JSON.parse(localStorage.getItem('dataList')) || [];
-        let nomArPan = document.querySelector('.nomARt').innerHTML;
-        let prixArPan = document.querySelector('.prix').innerHTML;
-        // let afficheR = document.querySelector('.prixArPan');
-        let dataPanier = {
-            nomPan: nomArPan,
-            prixPan: prixArPan
-        }
+// function redirectpanier(){
+//     let btnAjout = document.querySelector('.btn-detail');
+//     btnAjout.addEventListener('click', (e)=>{
+//         const dataList = JSON.parse(localStorage.getItem('dataList')) || [];
+//         let nomArPan = document.querySelector('.nomARt').innerHTML;
+//         let prixArPan = document.querySelector('.prix').innerHTML;
+//         // let afficheR = document.querySelector('.prixArPan');
+//         let dataPanier = {
+//             nomPan: nomArPan,
+//             prixPan: prixArPan
+//         }
 
-        dataList.push(dataPanier)
-        localStorage.setItem('dataList', JSON.stringify(dataList))
-        window.location.replace("http://127.0.0.1:5500/UserHtml/panierCon.html");
+//         dataList.push(dataPanier)
+//         localStorage.setItem('dataList', JSON.stringify(dataList))
+//         window.location.replace("http://127.0.0.1:5500/UserHtml/panierCon.html");
 
-        if (window.location.href("http://127.0.0.1:5500/UserHtml/panierCon.html")){
-            data = JSON.parse(localStorage.getItem('dataList'))
-            let prix = document.querySelector('.prixArPan');
-            let nom = document.querySelector('.nonArPan');
-            data.forEach(item => {
-                prix.innerHTML = item.prixPan;
-                nom.innerHTML = item.nomPan;
-            }) 
-        }
-    });
-}
+//         if (window.location.href("http://127.0.0.1:5500/UserHtml/panierCon.html")){
+//             data = JSON.parse(localStorage.getItem('dataList'))
+//             let prix = document.querySelector('.prixArPan');
+//             let nom = document.querySelector('.nonArPan');
+//             data.forEach(item => {
+//                 prix.innerHTML = item.prixPan;
+//                 nom.innerHTML = item.nomPan;
+//             }) 
+//         }
+//     });
+// }
 
 
     

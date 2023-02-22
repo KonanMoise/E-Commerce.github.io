@@ -59,16 +59,18 @@
         <div class="bottm">
             <div class="leftPan">
                 <div class="b1">
-                    <div class="imgPan"></div>
+                    <div class="imgPan">
+                        <img src="../IMG/pexels-ylanite-koppens-934069.jpg" alt="" width="100%" height="100%" object-fill="cover">
+                    </div>
                     <div class="textPan">
                         <h4 class="nonArPan">Tricot</h4>
                         <p>Taille: <span>L</span></p>
-                        <p>Quantité: <span>1</span></p>
+                        <p>Quantité: <span class="qte">1</span></p>
                         <p class="prixPan"><span class="prixArPan"></span> fcfa</p>
                         <a href="#" style="float: right; color:#000;text-decoration: underline;">Retirer</a>
                     </div>
                 </div>
-
+<!-- 
                 <div class="traitPan"></div>
 
                 <div class="b1">
@@ -80,7 +82,7 @@
                         <p class="prixPan"><span class="prixArPan"></span> fcfa</p>
                         <a href="#" style="float: right; color:#000;text-decoration: underline;">Retirer</a>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="rightPan">
                 <h4>Récapitulatif de la commande</h4>
@@ -135,5 +137,31 @@
         </div>
     </footer>
     <!-- end footer -->
+
+
+    <script>
+        let bloc = document.querySelector('.b1');
+        let parentBloc = document.querySelector('.leftPan');
+        let dataListPanier = JSON.parse(localStorage.getItem('panierList'));
+        dataListPanier.forEach(item =>{
+            const div = 
+            `<div class="b1" style="display: flex;">
+                <div class="imgPan">
+                    <img src=${item.image} alt="" width="100%" height="100%" object-fill="cover">
+                </div>
+                <div class="textPan">
+                    <h4 class="nonArPan">${item.nom}</h4>
+                    <p>Taille: <span>L</span></p>
+                    <p>Quantité: <span class="qte">1</span></p>
+                    <p class="prixPan"><span class="prixArPan">${item.prix}</span> fcfa</p>
+                    <a href="#" style="float: right; color:#000;text-decoration: underline;">Retirer</a>
+                </div>
+            </div>` 
+
+            parentBloc.innerHTML += div
+        })
+    </script>
+
+
 </body>
 </html>

@@ -1,5 +1,4 @@
-// localStorage.setItem("E-mail", document.querySelector("#emailCon").value);
-// localStorage.setItem("Mot de passe", document.querySelector("#motDePasseCon").value);
+
 let btnCon = document.querySelector("#btnCon");
 
 const form = document.querySelector('form')

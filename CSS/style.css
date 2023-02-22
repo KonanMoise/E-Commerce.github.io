@@ -356,10 +356,6 @@ button {
     width: 40%;
     height: 50vh;
     border: 2px solid rgba(255, 220, 219, 1);
-    background: url("../IMG/pexels-david-bartus-297933.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-color: #452;
 }
 
 #secDETaiPanier .top .description {
@@ -440,9 +436,6 @@ button {
         width: 30%;
         height: 50vh;
         border: 2px solid rgba(255, 220, 219, 1);
-        background: url("../IMG/pexels-david-bartus-297933.jpg");
-        background-position: center center;
-        background-size: cover;
     }
     #secDETaiPanier .top .description {
         width: 40%;
@@ -478,10 +471,6 @@ button {
         width: 70%;
         height: 50vh;
         border: 2px solid rgba(255, 220, 219, 1);
-        background: url("../IMG/pexels-david-bartus-297933.jpg");
-        background-position: center center;
-        background-size: cover;
-        image-resolution: none;
     } 
 }
 
@@ -616,7 +605,7 @@ button {
 
 
 .bloc_pan .bottm .leftPan .b1 {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: baseline;
 }
@@ -627,6 +616,7 @@ button {
     background: url("../IMG/pexels-ylanite-koppens-934069.jpg");
     background-position: center center;
     background-size: cover;
+    margin-bottom: 25px;
 }
 
 .bloc_pan .bottm .leftPan .b1 .textPan {
