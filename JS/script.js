@@ -30,12 +30,12 @@ function subTotal(){
 
 
 // Changer l'image au click sur la page details
-let TetDet = document.querySelector('.TeT');
+let TetDet = document.querySelectorAll('.TeT');
 let nomARt = document.querySelector('.nomARt');
 let prix = document.querySelector(".static_price");
 let parAjout = document.querySelector('.prix');
 
-document.querySelectorAll('.TeT').forEach(item => {
+TetDet.forEach(item => {
     item.addEventListener('click', (e) => {
         const parent = e.target.closest('.c')
         const nomA = parent.querySelector('.elem .TeT');
@@ -54,6 +54,15 @@ document.querySelectorAll('.TeT').forEach(item => {
 
 
 // Logique du panier
+
+let nom = document.querySelector('.nomARt');
+let prixAjout = document.querySelector('.static_price');
+let quntiteAjout = document.querySelector('.quantite');
+
+let product = {
+    nom: nom,
+    prix: prixAjout,
+}
 
 function saveArticle(article){
     localStorage.setItem("article", JSON.stringify(article));
@@ -116,6 +125,12 @@ function getTotalPrice(){
     }
     return total;
 }
+
+let ajoutPan = document.querySelector('.AjoutPan');
+ajoutPan.addEventListener('click', ()=>{
+    addArticle(product);
+    ajoutPan.style.display = 'none'
+})
 
 
 // recuperer les data du details 

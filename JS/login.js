@@ -11,9 +11,7 @@ form.addEventListener('submit', (e) =>{
     tabUser.forEach(element => {
         if (
             document.querySelector("#emailCon").value === element.email &&
-            document.querySelector("#motDePasseCon").value === element.motdepasse
-            
-            
+            document.querySelector("#motDePasseCon").value === element.motdepasse   
         ){
           result = element;
           console.log(element)
@@ -28,7 +26,8 @@ form.addEventListener('submit', (e) =>{
         console.log(typeof result)
     }
     else{
-        window.location.reload()
+        document.querySelector('#erreur').textContent = "ERREUR! Vos informations sont incorrect."
+        // window.location.reload()
     }
    
 })
