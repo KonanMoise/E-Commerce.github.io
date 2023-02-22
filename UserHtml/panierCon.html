@@ -150,12 +150,10 @@
 
             function removeArticle(){
                 let article = getArticle();
-                article = article.filter(p => p.id == product.id);
+                article = article.filter(p => p.nom == product.nom);
                 saveArticle();
             }
         });
-
-
 
     </script>
 
