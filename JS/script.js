@@ -118,12 +118,37 @@ function getTotalPrice(){
 }
 
 
-let btnAjout = document.querySelector('.btn-detail');
-console.log(btnAjout)
-btn-detail.addEventListener('click', (e)=>{
-    
-})
+// recuperer les data du details 
+function redirectpanier(){
+    let btnAjout = document.querySelector('.btn-detail');
+    btnAjout.addEventListener('click', (e)=>{
+        const dataList = JSON.parse(localStorage.getItem('dataList')) || [];
+        let nomArPan = document.querySelector('.nomARt').innerHTML;
+        let prixArPan = document.querySelector('.prix').innerHTML;
+        // let afficheR = document.querySelector('.prixArPan');
+        let dataPanier = {
+            nomPan: nomArPan,
+            prixPan: prixArPan
+        }
 
+        dataList.push(dataPanier)
+        localStorage.setItem('dataList', JSON.stringify(dataList))
+        window.location.replace("http://127.0.0.1:5500/UserHtml/panierCon.html");
+
+        if (window.location.href("http://127.0.0.1:5500/UserHtml/panierCon.html")){
+            data = JSON.parse(localStorage.getItem('dataList'))
+            let prix = document.querySelector('.prixArPan');
+            let nom = document.querySelector('.nonArPan');
+            data.forEach(item => {
+                prix.innerHTML = item.prixPan;
+                nom.innerHTML = item.nomPan;
+            }) 
+        }
+    });
+}
+
+
+    
 
 
 
