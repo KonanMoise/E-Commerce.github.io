@@ -10,7 +10,6 @@ AjoutPan.addEventListener('click', ()=>{
     let nom = document.querySelector(".nomARt").innerHTML;
     let prix = document.querySelector(".prix").innerHTML;
     let quantite = document.querySelector(".quantite").value;
-    console.log('img ', image)
 
     let article = {
         image,
@@ -22,3 +21,6 @@ AjoutPan.addEventListener('click', ()=>{
     panierList.push(article)
     localStorage.setItem('panierList', JSON.stringify(panierList))
 });
+
+
+

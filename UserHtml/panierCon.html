@@ -67,22 +67,9 @@
                         <p>Taille: <span>L</span></p>
                         <p>Quantité: <span class="qte">1</span></p>
                         <p class="prixPan"><span class="prixArPan"></span> fcfa</p>
-                        <a href="#" style="float: right; color:#000;text-decoration: underline;">Retirer</a>
+                        <a href="#" style="float: right; color:#000;text-decoration: underline;" onclick="removeArticle()">Retirer</a>
                     </div>
                 </div>
-<!-- 
-                <div class="traitPan"></div>
-
-                <div class="b1">
-                    <div class="imgPan"></div>
-                    <div class="textPan">
-                        <h4 class="nonArPan">Tricot</h4>
-                        <p>Taille: <span>S</span></p>
-                        <p>Quantité: <span>1</span></p>
-                        <p class="prixPan"><span class="prixArPan"></span> fcfa</p>
-                        <a href="#" style="float: right; color:#000;text-decoration: underline;">Retirer</a>
-                    </div>
-                </div> -->
             </div>
             <div class="rightPan">
                 <h4>Récapitulatif de la commande</h4>
@@ -152,14 +139,24 @@
                 <div class="textPan">
                     <h4 class="nonArPan">${item.nom}</h4>
                     <p>Taille: <span>L</span></p>
-                    <p>Quantité: <span class="qte">1</span></p>
+                    <p>Quantité: <span class="qte">${item.quantite}</span></p>
                     <p class="prixPan"><span class="prixArPan">${item.prix}</span> fcfa</p>
                     <a href="#" style="float: right; color:#000;text-decoration: underline;">Retirer</a>
                 </div>
             </div>` 
 
             parentBloc.innerHTML += div
-        })
+            let ttal = document.querySelector('.prixArPan').innerHTML
+
+            function removeArticle(){
+                let article = getArticle();
+                article = article.filter(p => p.id == product.id);
+                saveArticle();
+            }
+        });
+
+
+
     </script>
 
 
