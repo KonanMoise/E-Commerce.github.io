@@ -21,7 +21,7 @@ form.addEventListener('submit', (e) =>{
     console.log(typeof result)
     if (typeof result !== "undefined"){
 
-        window.location.replace("http://127.0.0.1:5500/UserHtml/indexCon.html");
+        window.location.replace("https://konanmoise.github.io/E-Commerce.github.io/UserHtml/indexCon.html");
         console.log(typeof result)
     }
     else{
