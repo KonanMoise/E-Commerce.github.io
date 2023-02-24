@@ -105,7 +105,10 @@ ajoutPan.addEventListener('click', ()=>{
     addArticle(product);
     confirm("Le produit à été ajouter!!");
     let panTop = document.querySelector('.bloc_right .panTop').innerHTML
-    panTop = eval(panTop+1)
+    panTop = parseInt(panTop)
+    panTop = panTop+1
+
+    console.log("le toto" + panTop)
 })
 
 
