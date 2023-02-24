@@ -103,9 +103,9 @@ function getTotalPrice(){
 let ajoutPan = document.querySelector('#AjoutPan');
 ajoutPan.addEventListener('click', ()=>{
     addArticle(product);
-    alert("Le produit à été ajouter!!");
+    confirm("Le produit à été ajouter!!");
     let panTop = document.querySelector('.bloc_right .panTop').innerHTML
-    console.log(panTop)
+    panTop = eval(panTop+1)
 })
 
 
