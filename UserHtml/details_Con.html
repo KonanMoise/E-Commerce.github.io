@@ -40,7 +40,7 @@
                     <input type="search" placeholder="Recherche">
                 </div>
                 <div style="width:12%">
-                    <a href="panierCon.html"><i class="fa fa-cart-shopping"></i></a> <span style="color:#000;">3</span>
+                    <a href="panierCon.html"><i class="fa fa-cart-shopping"></i><span style="color:#000;" class="panTop">3</span></a> 
                 </div>
                 <div>
                     <a href="../index.html">deconnexion</a>
@@ -159,7 +159,6 @@
         }
 
         function incrementer(){
-            console.log("mokofuntion incrementer")
             data = data + 1;
             document.querySelector('.quantite').value = data
             subTotal()
@@ -177,8 +176,9 @@
 
             document.querySelector(".prix").innerHTML = subT
         }
+
     </script>
-    
+
     <script src="../JS/script.js"></script>
     <script src="../JS/panier.js"></script>
     
