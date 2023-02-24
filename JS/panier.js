@@ -1,10 +1,10 @@
 
 
-
 // Logique Ajouter o panier
 let AjoutPan = document.querySelector("#AjoutPan");
 
 AjoutPan.addEventListener('click', ()=>{
+    confirm("moko")
     const panierList = JSON.parse(localStorage.getItem('panierList')) || []
     let image = document.querySelector("img").getAttribute('src');
     let nom = document.querySelector(".nomARt").innerHTML;

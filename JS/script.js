@@ -1,35 +1,4 @@
 
-// Logique du button ajouter
-let btnPlus = document.querySelector('.plus'),
-btnMinus = document.querySelector('.minus');
-
-btnPlus.addEventListener('click', ()=>{
-    let quntite = document.querySelector('.quantite').value;
-    quntite = parseInt(quntite) + 1;
-    subTotal();
-});
-
-btnMinus.addEventListener('click', ()=>{
-    if (quntite > 0){
-        quntite = parseInt(quntite) - 1;
-        subTotal();
-    }
-});
-
-// Somme totale
-function subTotal(){
-    let prix = parseInt(document.querySelector(".static_price").innerText);
-    let quantite = parseInt(document.querySelector(".quantite").value);
-    let subT = eval(prix*quantite)
-
-    console.log("le prix" + prix)
-    console.log(" la quntité " + quantite)
-    console.log(subT)
-
-    document.querySelector(".prix").innerHTML = subT
-}
-
-
 // Changer l'image au click sur la page details
 let TetDet = document.querySelectorAll('.TeT');
 let nomARt = document.querySelector('.nomARt');
@@ -134,6 +103,7 @@ function getTotalPrice(){
 let ajoutPan = document.querySelector('#AjoutPan');
 ajoutPan.addEventListener('click', ()=>{
     addArticle(product);
+    alert("Le produit à été ajouter!!");
 })
 
 

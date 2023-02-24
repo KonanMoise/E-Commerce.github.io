@@ -1,4 +1,3 @@
-
 let btnCon = document.querySelector("#btnCon");
 
 const form = document.querySelector('form')

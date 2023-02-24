@@ -65,9 +65,9 @@
                 <p>
                     <a href="login.html"><button type="submit" class="btn-detail">Ajouter au panier - <span class="prix">10000</span> fcfa</button></a>                 
                     <span class="wrapperBtn">
-                        <button class="minus" style="border:none;background:#fff;">-</button>
-                        <input type="text" class="quantite" value="1" style="width: 20px;border:none;">
-                        <button class="plus" style="border:none;background:#fff;">+</button>
+                        <button class="minus" style="border:none;background:#fff;" onclick="decrementer()">-</button>
+                        <input type="text" class="quantite" value="0" style="width: 20px;border:none;">
+                        <button class="plus" style="border:none;background:#fff;" onclick="incrementer()">+</button>
                     </span>
                 </p>
                 <p><a href="login.html"><button type="submit" class="btn-detail">Commander sur whatsapp</button></a></p>
@@ -141,6 +141,39 @@
         </div>
     </footer>
     <!-- end footer -->
+
+    <script>
+        var data = 1
+        document.querySelector('.quantite').value = data;
+
+        function decrementer(){
+            if ( document.querySelector('.quantite').value > 0 ){
+                data = data - 1;
+                document.querySelector('.quantite').value = data
+                subTotal()
+            }
+        }
+
+        function incrementer(){
+            console.log("mokofuntion incrementer")
+            data = data + 1;
+            document.querySelector('.quantite').value = data
+            subTotal()
+        }
+    
+        // Somme totale
+        function subTotal(){
+            let prix = parseInt(document.querySelector(".static_price").innerText);
+            let quantite = parseInt(document.querySelector(".quantite").value);
+            let subT = eval(prix*quantite)
+
+            console.log("le prix" + prix)
+            console.log(" la quntité " + quantite)
+            console.log(subT)
+
+            document.querySelector(".prix").innerHTML = subT
+        }
+    </script>
 
     <script src="../JS/script.js"></script>
     <script src="../JS/panier.js"></script>
